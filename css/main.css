@@ -94,13 +94,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* WHITE: #FFFFFF */
+/* BLACK: #000000 */
+/* GREEN: #006635 */
+
 body{
   text-align: center;
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
+/* NAVIGATION */
+
 .logo{
-  width: 150px;
+  width: 100px;
 }
 
 nav ul{
@@ -110,17 +116,30 @@ nav ul{
 nav ul li{
   display: inline-block;
   text-transform: uppercase;
-
 }
 
+nav ul a{
+  color: #000000;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 10px;
+}
+
+nav ul a:hover{
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+/* HEADER */
+
 header{
-  background-color: #0A5E30;
-  border-top: solid Black 10px;
+  background-color: #006635;
+  border-top: solid #000000 10px;
   clear: both;
 }
 
 h1{
-  color: white;
+  color: #FFFFFF;
   font-size: 3em;
   margin: 0 auto;
   padding: 15px 0px;
@@ -128,6 +147,8 @@ h1{
   text-transform: uppercase;
   width: 75%;
 }
+
+/* CONTENT */
 
 section{
   margin: 0 auto;
@@ -162,14 +183,16 @@ section .contentText p{
   text-align: left;
 }
 
+/* FOOTER */
+
 footer{
-  background-color: #0A5E30;
+  background-color: #006635;
   clear: both;
   padding: 25px 0px;
 }
 
 footer p{
-  color: white;
+  color: #FFFFFF;
 }
 
  /* ==========================================================================

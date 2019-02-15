@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Matt Lindsey - Developer / Designer - mattlindsey.ca
 
 # THANKS
 
-    <name>
+    Steven Haas
 
 # TECHNOLOGY COLOPHON
 
