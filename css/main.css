@@ -100,29 +100,37 @@ textarea {
 
 body{
   text-align: center;
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-family: 'source-sans-pro', sans-serif;
 }
 
 /* NAVIGATION */
 
 .logo{
   width: 100px;
+  padding: 5px;
+  margin-right: 25px;
+}
+
+nav{
+  background-color: #000000;
+  padding: 10px;
 }
 
 nav ul{
-  float: left;
+  text-align: left;
+  padding-left: 0;
+  margin: 0;
 }
 
 nav ul li{
   display: inline-block;
-  text-transform: uppercase;
+  padding: 5px;
 }
 
 nav ul a{
-  color: #000000;
+  color: #FFFFFF;
   font-size: 1em;
   font-weight: 500;
-  padding: 10px;
 }
 
 nav ul a:hover{
@@ -134,18 +142,16 @@ nav ul a:hover{
 
 header{
   background-color: #006635;
-  border-top: solid #000000 10px;
-  clear: both;
 }
 
 h1{
   color: #FFFFFF;
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0 auto;
-  padding: 15px 0px;
+  padding: 0px 0px;
   text-align: left;
   text-transform: uppercase;
-  width: 75%;
+  width: 65%;
 }
 
 /* CONTENT */
@@ -153,13 +159,13 @@ h1{
 section{
   margin: 0 auto;
   padding: 50px 0px 50px 0px;
-  width: 75%;
+  width: 65%;
 }
 
 section .contentImage{
   display: inline-block;
   float: left;
-  margin: 0 auto;
+  margin: 0 20px 20px 0;
   width: 40%;
 }
 
@@ -172,15 +178,21 @@ section .contentText{
 }
 
 section .contentText h2{
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
   text-align: left;
   text-transform: uppercase;
   font-size: 3em;
   padding-top: 0;
-  margin-top: 0px;
+  margin: 0 0 0 0;
 }
 
 section .contentText p{
   text-align: left;
+}
+
+section .contentText p a{
+  color: #006635;
+  text-decoration: none;
 }
 
 /* FOOTER */
