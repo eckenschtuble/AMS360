@@ -204,6 +204,18 @@ section .contentText p a{
   text-decoration: none;
 }
 
+/* EMAIL */
+
+p.mailError{
+  color: red;
+  font-size: 3em;
+}
+
+p.mailSuccess{
+  color: green;
+  background-color: black;
+}
+
 /* FOOTER */
 
 footer{
