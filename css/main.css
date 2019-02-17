@@ -108,10 +108,9 @@ body{
 .logo{
   width: 100px;
   padding: 5px;
-  margin-right: 25px;
 }
 
-nav{
+nav.navbar{
   background-color: #000000;
   padding: 10px;
 }
@@ -136,6 +135,16 @@ nav ul a{
 nav ul a:hover{
   color: #FFFFFF;
   background-color: #000000;
+}
+
+button.navbar-toggler{
+  color: #FFFFFF;
+  background-color: red;
+}
+
+button.navbar-toggler span.navbar-toggler-icon{
+  color: #FFFFFF;
+  background-color: blue;
 }
 
 /* HEADER */

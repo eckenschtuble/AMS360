@@ -12,6 +12,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://use.typekit.net/jsc2xgt.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -23,17 +24,30 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <nav>
-    <ul>
-      <a href="index.html"><img class="logo" src="img/AMSLogo360White.png" alt="AMS 360"></a>
+  <nav class="navbar navbar-expand-lg">
+  	<a class="navbar-brand" href="index.html"><img class="logo" src="img/AMSLogo360White.png" alt="AMS 360"></a>
 
-      <a href="index.html"><li>Home</li></a>
-      <a href="#"><li>Training</li></a>
-      <!--<a href="news.html"><li>News</li></a>-->
-      <!--<a href="about.html"><li>About</li></a>-->
-      <a href="#"><li>Contact</li></a>
-    </ul>
-  </nav>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  	</button>
+
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    	<ul class="navbar-nav mr-auto">
+      	<li class="nav-item">
+      		<a class="nav-link active" href="#">Home</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="#">Training</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="#">About</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="#">Contact</a>
+      	</li>
+    	</ul>
+  	</div>
+	</nav>
 
   <header>
     <h1>Welcome!</h1>
@@ -71,6 +85,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="js/bootstrap/bootstrap.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
