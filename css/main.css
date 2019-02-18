@@ -128,23 +128,13 @@ nav ul li{
 
 nav ul a{
   color: #FFFFFF;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 nav ul a:hover{
-  color: #FFFFFF;
-  background-color: #000000;
-}
-
-button.navbar-toggler{
-  color: #FFFFFF;
-  background-color: red;
-}
-
-button.navbar-toggler span.navbar-toggler-icon{
-  color: #FFFFFF;
-  background-color: blue;
+  color: #006635;
 }
 
 /* HEADER */
@@ -155,65 +145,93 @@ header{
 
 h1{
   color: #FFFFFF;
-  font-size: 2.5em;
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+  font-size: 4em;
   margin: 0 auto;
-  padding: 0px 0px;
+  padding: 30px 0 20px;
   text-align: left;
   text-transform: uppercase;
-  width: 65%;
+  width: 60%;
+  line-height: 35px;
 }
 
 /* CONTENT */
 
 section{
   margin: 0 auto;
-  padding: 50px 0px 50px 0px;
-  width: 65%;
+  padding: 40px 0 20px 0;
+  width: 60%;
 }
 
-section .contentImage{
-  display: inline-block;
-  float: left;
-  margin: 0 20px 20px 0;
-  width: 40%;
+section img{
+  margin: 20px 0 40px 0;
+  width: 80%;
 }
 
-section .contentImage img{
-  width: 100%;
-}
-
-section .contentText{
-  width: 100%;
-}
-
-section .contentText h2{
-  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+section p{
   text-align: left;
-  text-transform: uppercase;
-  font-size: 3em;
-  padding-top: 0;
-  margin: 0 0 0 0;
+  margin-bottom: 20px;
 }
 
-section .contentText p{
-  text-align: left;
-}
-
-section .contentText p a{
+section p a{
   color: #006635;
   text-decoration: none;
 }
 
+section h3{
+  color: #006635;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.trainingDesktop div{
+  display: inline-block;
+  float: left;
+  margin: 20px 0 20px 0;
+  padding: 0 40px 0 40px;
+  text-align: left;
+  width: 50%;
+}
+
+.trainingDesktop div p{
+  margin-bottom: 0;
+}
+
+.trainingLast{
+  margin-bottom: 20px;
+}
+
+.trainingMobile{
+  display: none;
+}
+
 /* EMAIL */
+
+form{
+  margin-bottom: 20px;
+}
+
+form label{
+  text-align: left;
+  float: left;
+}
+
+form input, form textarea{
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+form input[type=submit]{
+  width: 100px;
+  margin-bottom: 20px;
+}
 
 p.mailError{
   color: red;
-  font-size: 3em;
 }
 
 p.mailSuccess{
   color: green;
-  background-color: black;
 }
 
 /* FOOTER */
@@ -221,11 +239,13 @@ p.mailSuccess{
 footer{
   background-color: #006635;
   clear: both;
-  padding: 25px 0px;
+  padding: 20px 0px;
 }
 
 footer p{
   color: #FFFFFF;
+  margin: 0 auto;
+  width: 90%;
 }
 
  /* ==========================================================================
@@ -315,14 +335,100 @@ footer p{
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1224px) {
+  h1{
+    width: 70%;
+  }
+
+  section{
+    width: 70%;
+  }
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media only screen and (max-width: 991px) {
+  nav ul li{
+    text-align: center;
+  }
+
+  h1{
+    width: 80%;
+  }
+
+  section{
+    width: 80%;
+  }
+
+  section img{
+    width: 100%;
+  }
+
+  .trainingDesktop{
+    display: none;
+  }
+
+  .trainingMobile{
+    display: inline-block;
+    margin: 20px 0 20px 0;
+  }
+
+  section h3{
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 3em;
+    text-align: center;
+    width: 80%;
+  }
+
+  section{
+    width: 80%;
+  }
+
+  section img{
+    width: 100%;
+  }
+
+  section h3{
+    font-size: 1.25em;
+  }
+
+  form table{
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  form input, form textarea{
+    width: 125px;
+  }
+
+  form input[type=submit]{
+    width: 100px;
+  }
+
+  footer p{
+    font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h1{
+    font-size: 2.5em;
+    width: 90%;
+  }
+
+  section{
+    width: 90%;
+  }
+
+  section img{
+    width: 100%;
+  }
+}
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
