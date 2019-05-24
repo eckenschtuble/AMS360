@@ -179,11 +179,15 @@
       </table>
     </form>
 
-    <p>To contact sales: Email sales@ams360inc.com</p>
+    <p>To email sales: sales@ams360inc.com</p>
+
+    <p>For business or technical matters please contact: Robert Kobielski, rrk@ams360inc.com</p>
 
     <p>
-      For business or technical matters please contact: Robert Kobielski, rrk@ams360inc.com<br/>
-      Or call: +1 519 792 3780
+      Or call us at: 1-833-4-AMS360 (1-833-426-7360)<br/>
+      General Inquires: x1<br/>
+      Sales: x702<br/>
+      Licensing and Technical Support: x710
     </p>
   </section>
 
