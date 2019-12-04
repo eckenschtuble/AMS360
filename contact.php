@@ -20,40 +20,43 @@
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <a class="navbar-brand" href="index.html"><img class="logo" src="img/AMSLogo.png" alt="AMS 360"></a>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  	<a class="navbar-brand" href="index.html"><img class="logo" src="img/AMSLogo360White.png" alt="AMS 360"></a>
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">&#9776;</span>
+    </button>
 
-  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    	<span class="navbar-toggler-icon"></span>
-  	</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <a class="nav-link" href="index.html"><li class="nav-item">
+          Home
+        </li></a>
+        <a class="nav-link" href="training.html"><li class="nav-item">
+          Training
+        </li></a>
+        <a class="nav-link" href="about.html"><li class="nav-item">
+          About
+        </li></a>
+        <a class="nav-link" href="contact.php"><li class="nav-item">
+          Contact
+        </li></a>
+        <li class="co-branding-link">
+          <img class="co-branding" src="img/co-branding-graphics/color-on-black-edit.png"/>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    	<ul class="navbar-nav mr-auto">
-      	<li class="nav-item">
-      		<a class="nav-link" href="index.html">Home</a>
-      	</li>
-      	<li class="nav-item">
-        	<a class="nav-link" href="training.html">Training</a>
-      	</li>
-      	<li class="nav-item">
-        	<a class="nav-link" href="about.html">About</a>
-      	</li>
-      	<li class="nav-item">
-        	<a class="nav-link active" href="contact.php">Contact</a>
-      	</li>
-    	</ul>
-  	</div>
-	</nav>
+  <div id="co-branding-mobile">
+    <img class="co-branding" src="img/co-branding-graphics/color-on-black-edit.png"/>
+  </div>
 
   <header>
     <h1>Email AMS 360</h1>
   </header>
 
-  <section class="clearfix">
+  <section class="clearfix info">
     <p>For general inquires:</p>
 
     <?php
@@ -125,10 +128,10 @@
     ?>
 
     <form name="htmlform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-      <table width="450px">
+      <table>
         <tr>
           <td valign="top">
-            <label for="first_name">First Name *</label>
+            <label for="first_name">First Name</label>
           </td>
           <td valign="top">
             <input  type="text" name="first_name" maxlength="50" size="30">
@@ -136,8 +139,8 @@
         </tr>
 
         <tr>
-          <td valign="top"">
-            <label for="last_name">Last Name *</label>
+          <td valign="top">
+            <label for="last_name">Last Name</label>
           </td>
           <td valign="top">
             <input type="text" name="last_name" maxlength="50" size="30">
@@ -146,7 +149,7 @@
 
         <tr>
           <td valign="top">
-            <label for="email">Email *</label>
+            <label for="email">Email</label>
           </td>
           <td valign="top">
             <input  type="text" name="email" maxlength="80" size="30">
@@ -164,7 +167,7 @@
         
         <tr>
           <td valign="top">
-            <label for="comments">Message *</label>
+            <label for="comments">Message</label>
           </td>
           <td valign="top">
             <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
@@ -186,8 +189,8 @@
     <p>
       Or call us at: 1-833-4-AMS360 (1-833-426-7360)<br/>
       General Inquires: x1<br/>
-      Sales: x702<br/>
-      Licensing and Technical Support: x710
+      Sales: x2<br/>
+      Licensing and Technical Support: x3
     </p>
   </section>
 

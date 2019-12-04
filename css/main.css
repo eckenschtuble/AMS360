@@ -94,83 +94,136 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* WHITE: #FFFFFF */
-/* BLACK: #000000 */
-/* GREEN: #006635 */
+/* AMS 360 GREEN: #006635 */
 
 body{
   text-align: center;
   font-family: 'source-sans-pro', sans-serif;
 }
 
-/* NAVIGATION */
-
-.logo{
-  width: 100px;
-  padding: 5px;
+a.navbar-brand{
+  padding: 0;
+  margin: 40px 0 0;
 }
 
+.logo{
+  width: 250px;
+}
+
+
+  /**************/
+ /* NAVIGATION */
+/**************/
+
 nav.navbar{
-  background-color: #000000;
-  padding: 10px;
+  background-color: black;
+  margin-top: 40px;
+  padding: 0;
 }
 
 nav ul{
-  text-align: left;
-  padding-left: 0;
-  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 55%;
+  align-items: center;
 }
 
-nav ul li{
-  display: inline-block;
-  padding: 5px;
-}
-
-nav ul a{
-  color: #FFFFFF;
-  font-size: 1.25em;
+nav.navbar-expand-lg ul.navbar-nav a.nav-link{
+  color: white;
+  font-size: 1.5em;
   font-weight: 500;
-  text-transform: uppercase;
+  padding: 15px 0 15px;
+  margin-right: 20px;
+  z-index: 10000;
 }
 
-nav ul a:hover{
+nav ul a li:hover{
   color: #006635;
 }
 
-/* HEADER */
+nav ul .co-branding-link{
+  position: absolute;
+  width: 55%;
+  text-align: right;
+  z-index: 1;
+}
+
+.co-branding{
+  width: 150px;
+}
+
+#co-branding-mobile{
+  display: none;
+}
+
+button.navbar-toggler{
+  padding: 15px;
+  margin: 0 auto;
+  border: none;
+  align-items: center;
+
+}
+
+span.navbar-toggler-icon:hover{
+  color: #006635;
+}
+
+span.navbar-toggler-icon{
+  color: white;
+  font-size: 3em;
+  line-height: 25px;
+  height: 36px;
+}
+
+
+  /**********/
+ /* HEADER */
+/**********/
 
 header{
   background-color: #006635;
 }
 
 h1{
-  color: #FFFFFF;
+  color: white;
   font-family: 'bebas-neue-by-fontfabric', sans-serif;
   font-size: 4em;
   margin: 0 auto;
   padding: 30px 0 20px;
   text-align: left;
   text-transform: uppercase;
-  width: 60%;
+  width: 55%;
   line-height: 35px;
 }
 
-/* CONTENT */
 
-section{
-  margin: 0 auto;
-  padding: 40px 0 20px 0;
-  width: 60%;
+  /***********/
+ /* CONTENT */
+/***********/
+
+section.info{
+  margin: 30px auto;
+  padding: 0;
+  width: 55%;
+  font-size: 1.25em;
 }
 
-section img{
-  margin: 20px 0 40px 0;
-  width: 80%;
+section.images{
+  width: 100%;
+}
+
+section.images img{
+  width: 55%;
+  border-top: 10px solid #006635;
 }
 
 section p{
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+}
+
+section p.spacer{
+  margin-bottom: 15px;
 }
 
 section p a{
@@ -187,39 +240,47 @@ section h3{
 .trainingDesktop div{
   display: inline-block;
   float: left;
-  margin: 20px 0 20px 0;
   padding: 0 40px 0 40px;
   text-align: left;
   width: 50%;
+  font-size: 0.75em;
 }
 
 .trainingDesktop div p{
   margin-bottom: 0;
 }
 
+.trainingDesktop div h3{
+  margin-top: 30px;
+}
+
 .trainingMobile{
   display: none;
 }
 
-/* EMAIL */
 
-form{
-  margin-bottom: 20px;
+  /*********/
+ /* EMAIL */
+/*********/
+
+form table{
+  margin: 0 auto;
 }
 
 form label{
   text-align: left;
   float: left;
+  padding-right: 30px;
 }
 
 form input, form textarea{
   width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 form input[type=submit]{
   width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 p.mailError{
@@ -230,19 +291,24 @@ p.mailSuccess{
   color: green;
 }
 
-/* FOOTER */
+  /**********/
+ /* FOOTER */
+/**********/
 
 footer{
-  background-color: #006635;
+  background-color: black;
   clear: both;
-  padding: 20px 0px;
+  font-size: 1.25em;
+  padding: 30px 0px;
+  text-align: left;
 }
 
 footer p{
-  color: #FFFFFF;
+  color: white;
   margin: 0 auto;
-  width: 90%;
+  width: 55%;
 }
+
 
  /* ==========================================================================
    Helper classes
@@ -332,30 +398,52 @@ footer p{
    ========================================================================== */
 
 @media only screen and (max-width: 1224px) {
-  h1{
-    width: 70%;
-  }
-
-  section{
-    width: 70%;
+  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p{
+    width: 65%;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  nav ul li{
-    text-align: center;
+  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p{
+    width: 75%;
+  }
+
+  nav.navbar{
+    background-color: #006635;
+  }
+
+  nav ul .co-branding-link{
+    display: none;
+  }
+
+  nav.navbar-expand-lg ul.navbar-nav a.nav-link{
+    border-top: 5px solid black;
+    padding: 15px 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  nav.navbar-expand-lg ul.navbar-nav a.nav-link:first-of-type{
+    border-top: none;
+    margin-top: 0px;
+  }
+
+  nav.navbar-expand-lg ul.navbar-nav a.nav-link:last-of-type{
+    margin-bottom: 0px;
+  }
+
+  #co-branding-mobile{
+    display: block;
+    background-color: black;
+    padding: 20px 0;
+  }
+
+  nav ul a li:hover, span.navbar-toggler-icon:hover{
+    color: black;
   }
 
   h1{
-    width: 80%;
-  }
-
-  section{
-    width: 80%;
-  }
-
-  section img{
-    width: 100%;
+    text-align: center;
   }
 
   .trainingDesktop{
@@ -368,64 +456,49 @@ footer p{
   }
 
   section h3{
+    margin-top: 30px;
+    font-size: 1.25em;
     text-align: left;
+  }
+
+  section h3:first-of-type{
+    margin-top: 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p{
+    width: 85%;
+  }
+
+  .logo{
+    width: 200px;
+  }
+
   h1{
-    font-size: 3em;
-    text-align: center;
-    width: 80%;
+    font-size: 2.75em;
   }
 
-  section{
-    width: 80%;
+  section.info{
+    font-size: 1.05em;
   }
 
-  section img{
-    width: 100%;
-  }
-
-  section h3{
-    font-size: 1.25em;
-  }
-
-  form table{
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  form input, form textarea{
-    width: 125px;
-  }
-
-  form input[type=submit]{
+  form label{
+    padding-right: 0px;
     width: 100px;
   }
 
-  footer p{
-    font-size: 0.75em;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  h1{
-    font-size: 2.5em;
-    width: 90%;
-  }
-
-  section{
-    width: 90%;
-  }
-
-  section img{
+  form input, form textarea{
     width: 100%;
   }
-}
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  form input[type=submit]{
+    width: 50%;
+  }
+
+  footer{
+    font-size: 1.05em;
+  }
 }
 
  
@@ -504,5 +577,3 @@ footer p{
         page-break-after: avoid;
     }
 }
-
-
