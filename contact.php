@@ -195,7 +195,17 @@
   </section>
 
   <footer>
-    <p>PowerMILL®, PowerSHAPE®, PowerINSPECT®, and FeatureCAM®, are registered trademarks of © Autodesk Inc.</p>
+    <h2>Follow AMS 360!</h2>
+    <ul id="socialMedia">
+      <a href="https://business.facebook.com/ams360inc/" target="_blank"><li><img src="img/social/facebook.png" alt="Facebook"></li></a>
+      <a href="https://www.instagram.com/ams360inc/" target="_blank"><li><img src="img/social/instagram.png" alt="Instagram"></li></a>
+      <a href="https://www.linkedin.com/company/ams-360-inc" target="_blank"><li><img src="img/social/linkedin.png" alt="LinkedIn"></li></a>
+      <a href="https://www.youtube.com/channel/UCPp-UGkN6A8baOZWqo2GPqQ" target="_blank"><li><img src="img/social/youtube.png" alt="YouTube"></li></a>
+    </ul>
+
+    <div>
+      <p>PowerMILL®, PowerSHAPE®, PowerINSPECT®, and FeatureCAM®, are all registered trademarks of ©Autodesk Inc.</p>
+    </div>
   </footer>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

@@ -214,7 +214,7 @@ section.images{
 
 section.images img{
   width: 55%;
-  border-top: 10px solid #006635;
+  border-top: 15px solid #006635;
 }
 
 section p{
@@ -296,17 +296,51 @@ p.mailSuccess{
 /**********/
 
 footer{
-  background-color: black;
+  background-color: white;
+  border-top: 15px solid #006635;
   clear: both;
   font-size: 1.25em;
-  padding: 30px 0px;
+  padding: 30px 0 0;
   text-align: left;
+}
+
+footer h2{
+  color: black;
+  margin: 0 auto;
+  width: 55%;
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+  font-size: 4em;
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 65px;
+}
+
+footer #socialMedia{
+  background-color: white;
+  list-style-type: none;
+  padding: 0 0 30px;
+  margin: 0 auto;
+  width: 55%;
+}
+
+footer #socialMedia li{
+  display: inline-block;
+}
+
+footer #socialMedia li img{
+  margin-right: 10px;
+  width: 50px;
+}
+
+footer div{
+  background-color: black;
 }
 
 footer p{
   color: white;
   margin: 0 auto;
   width: 55%;
+  padding: 30px 0px;
 }
 
 
@@ -398,13 +432,13 @@ footer p{
    ========================================================================== */
 
 @media only screen and (max-width: 1224px) {
-  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p{
+  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p, footer h2, footer #socialMedia{
     width: 65%;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p{
+  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p, footer h2, footer #socialMedia{
     width: 75%;
   }
 
@@ -467,7 +501,7 @@ footer p{
 }
 
 @media only screen and (max-width: 768px) {
-  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p{
+  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p, footer h2, footer #socialMedia{
     width: 85%;
   }
 
@@ -475,7 +509,7 @@ footer p{
     width: 200px;
   }
 
-  h1{
+  h1, footer h2{
     font-size: 2.75em;
   }
 
@@ -498,6 +532,15 @@ footer p{
 
   footer{
     font-size: 1.05em;
+  }
+
+  footer h2{
+    line-height: 40px;
+  }
+
+  footer #socialMedia li img{
+    margin-right: 5px;
+    width: 30px;
   }
 }
 
