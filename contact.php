@@ -38,8 +38,14 @@
         <a class="nav-link" href="events.html"><li class="nav-item">
           Events
         </li></a>
+        <a class="nav-link" href="zero.html"><li class="nav-item">
+          Zero to 360
+        </li></a>
         <a class="nav-link" href="about.html"><li class="nav-item">
           About
+        </li></a>
+        <a class="nav-link" href="team.html"><li class="nav-item">
+          Team
         </li></a>
         <a class="nav-link" href="contact.php"><li class="nav-item">
           Contact

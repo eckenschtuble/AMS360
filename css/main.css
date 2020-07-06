@@ -90,9 +90,14 @@ textarea {
     padding: 0.2em 0;
 }
 
- /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+
+
+
+
+
+
+
+/* ================================================================================================================= */
 
 /* AMS 360 GREEN: #006635 */
 
@@ -110,6 +115,11 @@ a.navbar-brand{
   width: 250px;
 }
 
+nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
+  width: 65%;
+}
+
+
 
   /**************/
  /* NAVIGATION */
@@ -122,18 +132,17 @@ nav.navbar{
 }
 
 nav ul{
-  padding: 0;
-  margin: 0 auto;
-  width: 55%;
   align-items: center;
+  margin: 0 auto;
+  padding: 0;
 }
 
 nav.navbar-expand-lg ul.navbar-nav a.nav-link{
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 500;
-  padding: 15px 0 15px;
   margin-right: 20px;
+  padding: 15px 0 15px;
   z-index: 10000;
 }
 
@@ -143,7 +152,6 @@ nav ul a li:hover{
 
 nav ul .co-branding-link{
   position: absolute;
-  width: 55%;
   text-align: right;
   z-index: 1;
 }
@@ -161,7 +169,6 @@ button.navbar-toggler{
   margin: 0 auto;
   border: none;
   align-items: center;
-
 }
 
 span.navbar-toggler-icon:hover{
@@ -176,25 +183,50 @@ span.navbar-toggler-icon{
 }
 
 
-  /**********/
- /* HEADER */
-/**********/
+
+  /***********/
+ /* HEADERS */
+/***********/
 
 header{
   background-color: #006635;
 }
 
-h1{
+h1, h2, h3{
   color: white;
   font-family: 'bebas-neue-by-fontfabric', sans-serif;
   font-size: 4em;
+  line-height: 35px;
   margin: 0 auto;
   padding: 35px 0 25px;
   text-align: left;
   text-transform: uppercase;
-  width: 55%;
-  line-height: 35px;
 }
+
+h2{
+  font-size: 4rem;
+  line-height: 65px;
+  padding: 0;
+}
+
+h3{
+  background-color: black;
+  font-size: 1.5em;
+  padding: 10px 15px 5px;
+}
+
+h3.green{
+  background-color: #006635;
+}
+
+a h3:hover{
+  color: #006635;
+}
+
+a h3.green:hover{
+  color: black;
+}
+
 
 
   /***********/
@@ -202,19 +234,37 @@ h1{
 /***********/
 
 section.info{
-  margin: 40px auto;
+  font-size: 1.2em;
+  margin: 25px auto 45px;
   padding: 0;
-  width: 55%;
-  font-size: 1.25em;
 }
 
-section.images{
+section.team{
+  float: left;
+  width: 50%;
+}
+
+section.team p{
+  margin: 25px auto 45px;
+  padding: 0;
+}
+
+section.team.left{
+  padding-right: 15px;
+}
+
+section.team.right{
+  padding-left: 15px;
+}
+
+section.team h3{
   width: 100%;
 }
 
-section.images img{
-  width: 55%;
-  border-top: 15px solid #006635;
+section.team img{
+  width: 100%;
+  border-radius: 50%;
+  padding: 0 90px 25px;
 }
 
 section p{
@@ -231,32 +281,28 @@ section p a{
   text-decoration: none;
 }
 
-section h3{
-  color: #006635;
-  text-transform: uppercase;
-  font-size: 1.5em;
+section.images, section.imageHeader{
+  width: 100%;
 }
 
-.trainingDesktop div{
-  display: inline-block;
-  float: left;
-  padding: 0 40px 0 40px;
-  text-align: left;
-  width: 50%;
-  font-size: 0.75em;
+section.images img{
+  border-top: 15px solid #006635;
 }
 
-.trainingDesktop div p{
-  margin-bottom: 0;
+section.imageHeader img{
+  border-top: none;
+  margin: 25px 0 45px;
 }
 
-.trainingDesktop div h3{
-  margin-top: 30px;
+section.video{
+  margin: 0 auto;
 }
 
-.trainingMobile{
-  display: none;
+section.video iframe{
+  width: 100%;
+  height: 550px;
 }
+
 
 
   /*********/
@@ -291,6 +337,8 @@ p.mailSuccess{
   color: green;
 }
 
+
+
   /**********/
  /* FOOTER */
 /**********/
@@ -298,98 +346,79 @@ p.mailSuccess{
 footer{
   background-color: black;
   clear: both;
-  font-size: 1.25em;
-  margin-top: 60px;
-  padding: 40px 0 0;
+  font-size: 1.2em;
+  margin-top: 90px;
+  padding: 45px 0 0;
   text-align: left;
 }
 
-footer h2{
-  color: white;
-  margin: 0 auto;
-  width: 55%;
-  font-family: 'bebas-neue-by-fontfabric', sans-serif;
-  font-size: 4rem;
-  padding: 0;
-  text-transform: uppercase;
-  line-height: 65px;
-}
-
 footer #socialMedia{
+  height: 45px;
   list-style-type: none;
+  margin: 0 auto;
   padding: 0;
-  margin: 0 auto 20px;
-  width: 55%;
 }
 
 footer #socialMedia a{
   display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin-right: 10px;
+  height: 45px;
+  margin-right: 5px;
+  width: 45px;
 }
 
-footer #socialMedia li.facebook{
-  height: 60px;
-  width: 60px;
+footer #socialMedia li{
+  background-size: 45px 45px;
+  height: 45px;
+  width: 45px;
+}
+
+li.facebook{
   background-image: url('../img/social/facebook.png');
-  background-size: 60px 60px;
 }
 
-footer #socialMedia li.facebook:hover{
+li.facebook:hover{
   background-image: url('../img/social/facebookGreen.png');
 }
 
-footer #socialMedia li.instagram{
-  height: 60px;
-  width: 60px;
+li.instagram{
   background-image: url('../img/social/instagram.png');
-  background-size: 60px 60px;
 }
 
-footer #socialMedia li.instagram:hover{
+li.instagram:hover{
   background-image: url('../img/social/instagramGreen.png');
 }
 
-footer #socialMedia li.linkedin{
-  height: 60px;
-  width: 60px;
+li.linkedin{
   background-image: url('../img/social/linkedIn.png');
-  background-size: 60px 60px;
 }
 
-footer #socialMedia li.linkedin:hover{
+li.linkedin:hover{
   background-image: url('../img/social/linkedInGreen.png');
 }
 
-footer #socialMedia li.youtube{
-  height: 60px;
-  width: 60px;
+li.youtube{
   background-image: url('../img/social/youTube.png');
-  background-size: 60px 60px;
 }
 
-footer #socialMedia li.youtube:hover{
+li.youtube:hover{
   background-image: url('../img/social/youTubeGreen.png');
 }
 
 footer p{
   color: white;
   margin: 0 auto;
-  width: 55%;
-  padding: 0 0 40px;
+  padding: 25px 0 45px;
 }
 
 
- /* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
 
- .hidden {
+  /******************/
+ /* HELPER CLASSES */
+/******************/
+
+/* Hide visually and from screen readers*/
+.hidden {
   display: none !important;
 }
 
@@ -461,22 +490,21 @@ footer p{
   clear: both;
 }
 
- 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+
+
+  /*********************/
+ /* RESPONSIVE STYLES */
+/*********************/
 
 @media only screen and (max-width: 1224px) {
-  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p, footer h2, footer #socialMedia{
-    width: 65%;
+  nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p, footer h2, footer #socialMedia{
-    width: 75%;
+  nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
+    width: 85%;
   }
 
   nav.navbar{
@@ -516,30 +544,11 @@ footer p{
   h1{
     text-align: center;
   }
-
-  .trainingDesktop{
-    display: none;
-  }
-
-  .trainingMobile{
-    display: inline-block;
-    margin-top: 20px;
-  }
-
-  section h3{
-    margin-top: 30px;
-    font-size: 1.25em;
-    text-align: left;
-  }
-
-  section h3:first-of-type{
-    margin-top: 0;
-  }
 }
 
 @media only screen and (max-width: 768px) {
-  nav ul, nav ul .co-branding-link, h1, section.info, section.images img, footer p, footer h2, footer #socialMedia{
-    width: 85%;
+  nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
+    width: 90%;
   }
 
   .logo{
@@ -551,7 +560,20 @@ footer p{
   }
 
   section.info{
-    font-size: 1.05em;
+    font-size: 1em;
+  }
+
+  section.team{
+    float: none;
+    width: 100%;
+  }
+
+  section.team.left{
+    padding-right: 0;
+  }
+
+  section.team.right{
+    padding-left: 0;
   }
 
   form label{
@@ -581,79 +603,63 @@ footer p{
   }
 }
 
- 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
-   @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  /****************/
+ /* PRINT STYLES */
+/****************/
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+/* Inlined to avoid the additional HTTP request: https://www.phpied.com/delay-loading-your-print-css/ */
+@media print{
+  *, *:before, *:after{
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  a, a:visited{
+    text-decoration: underline;
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  a[href]:after{
+    content: " (" attr(href) ")";
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  abbr[title]:after{
+    content: " (" attr(title) ")";
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  /* Don't show links that are fragment identifiers, or use the `javascript:` pseudo protocol */
+  a[href^="#"]:after, a[href^="javascript:"]:after{
+    content: "";
+  }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  pre{
+    white-space: pre-wrap !important;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  pre, blockquote{
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  /* Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+  thead{
+    display: table-header-group;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  tr, img{
+    page-break-inside: avoid;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  p, h2, h3{
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3{
+    page-break-after: avoid;
+  }
 }
