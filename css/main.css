@@ -115,8 +115,12 @@ a.navbar-brand{
   width: 250px;
 }
 
-nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
-  width: 65%;
+nav ul, nav ul .co-branding-link, h1, h2, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
+  width: 60%;
+}
+
+h3{
+  width: calc(60% + 30px);
 }
 
 
@@ -127,7 +131,7 @@ nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, 
 
 nav.navbar{
   background-color: black;
-  margin-top: 50px;
+  margin-top: 45px;
   padding: 0;
 }
 
@@ -233,43 +237,58 @@ a h3.green:hover{
  /* CONTENT */
 /***********/
 
-section.info{
-  font-size: 1.2em;
-  margin: 25px auto 45px;
-  padding: 0;
-}
-
-section.team{
-  float: left;
-  width: 50%;
-}
-
-section.team p{
-  margin: 25px auto 45px;
-  padding: 0;
-}
-
-section.team.left{
-  padding-right: 15px;
-}
-
-section.team.right{
-  padding-left: 15px;
-}
-
-section.team h3{
-  width: 100%;
-}
-
-section.team img{
-  width: 100%;
-  border-radius: 50%;
-  padding: 0 90px 25px;
-}
-
 section p{
   text-align: left;
   margin-bottom: 0;
+}
+
+section.info{
+  font-size: 1.2em;
+  margin: 30px auto 45px;
+  padding: 0;
+}
+
+section.info.list{
+  margin: 15px auto 30px;
+}
+
+section.info.list{
+  margin: 15px auto 45px;
+}
+
+section.info.team{
+  margin-top: 45px;
+}
+
+section.info.team div.teamIMG{
+  display: inline-block;
+  float: left;
+  margin-right: 30px;
+  width: calc(30%);
+}
+
+section.info.team div.teamIMG div{
+  background-color: #006635;
+  padding: 7.5%;
+}
+
+section.info.team div.teamIMG div img{
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+section.info.team h3{
+  margin: 0;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+section.info.team div.teamIMG p{
+  line-height: 20px;
+  background-color: black;
+  color: white;
+  padding: 0 15px 15px;
 }
 
 section p.spacer{
@@ -298,7 +317,13 @@ section.video{
   margin: 0 auto;
 }
 
+section.video video{
+  margin: 0 auto;
+  width: 100%;
+}
+
 section.video iframe{
+  margin: 0 auto;
   width: 100%;
   height: 550px;
 }
@@ -347,8 +372,8 @@ footer{
   background-color: black;
   clear: both;
   font-size: 1.2em;
-  margin-top: 90px;
-  padding: 45px 0 0;
+  margin-top: 75px;
+  padding: 30px 0 0;
   text-align: left;
 }
 
@@ -407,7 +432,7 @@ li.youtube:hover{
 footer p{
   color: white;
   margin: 0 auto;
-  padding: 25px 0 45px;
+  padding: 30px 0 45px;
 }
 
 
@@ -497,14 +522,22 @@ footer p{
 /*********************/
 
 @media only screen and (max-width: 1224px) {
-  nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
-    width: 80%;
+  nav ul, nav ul .co-branding-link, h1, h2, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
+    width: 70%;
+  }
+
+  h3{
+    width: calc(70% + 30px);
   }
 }
 
 @media only screen and (max-width: 991px) {
-  nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
-    width: 85%;
+  nav ul, nav ul .co-branding-link, h1, h2, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
+    width: 80%;
+  }
+
+  h3{
+    width: calc(80% + 30px);
   }
 
   nav.navbar{
@@ -541,39 +574,80 @@ footer p{
     color: black;
   }
 
+  h1, h2{
+    font-size: 2.75em;
+  }
+
   h1{
     text-align: center;
+    line-height: 35px;
+    padding: 25px 0 15px;
+  }
+
+  h3{
+    font-size: 1.35em;
+    padding: 10px 10px 5px;
+    line-height: 22px;
+  }
+
+  section.info{
+    font-size: 1em;
+    margin: 20px auto 35px;
+  }
+
+  section.info.list{
+    margin: 10px auto 25px;
+  }
+
+  section.info.team div.teamIMG p{
+    line-height: 20px;
+    padding: 0 10px 10px;
+  }
+
+  footer{
+    font-size: 1.05em;
+    margin-top: 65px;
+    padding: 20px 0 0;
+  }
+
+  footer h2{
+    line-height: 40px;
+  }
+
+  footer #socialMedia li img{
+    margin-right: 5px;
+    width: 30px;
+  }
+
+  footer p{
+    padding: 20px 0 35px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  nav ul, nav ul .co-branding-link, h1, h2, h3, section.info, section.images img, section.imageHeader img, section.video, footer #socialMedia, footer p{
+  nav ul, nav ul .co-branding-link, h1, h2, section.info, section.images img, section.imageHeader img, section.video, section.team, footer #socialMedia, footer p{
     width: 90%;
+  }
+
+  h3{
+    width: calc(90% + 20px);
   }
 
   .logo{
     width: 200px;
   }
 
-  h1, footer h2{
-    font-size: 2.75em;
-  }
-
-  section.info{
-    font-size: 1em;
-  }
-
-  section.team{
+  section.info.team div.teamIMG{
+    display: block;
     float: none;
+    margin-right: 0;
     width: 100%;
   }
 
-  section.team.left{
-    padding-right: 0;
-  }
-
-  section.team.right{
-    padding-left: 0;
+  section.info.team>p{
+    display: block;
+    padding: 0;
+    margin-top: 20px;
   }
 
   form label{
@@ -587,19 +661,6 @@ footer p{
 
   form input[type=submit]{
     width: 50%;
-  }
-
-  footer{
-    font-size: 1.05em;
-  }
-
-  footer h2{
-    line-height: 40px;
-  }
-
-  footer #socialMedia li img{
-    margin-right: 5px;
-    width: 30px;
   }
 }
 
