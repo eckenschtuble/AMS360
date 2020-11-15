@@ -196,7 +196,7 @@ header{
   background-color: #006635;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   color: white;
   font-family: 'bebas-neue-by-fontfabric', sans-serif;
   font-size: 4em;
@@ -213,7 +213,7 @@ h2{
   padding: 0;
 }
 
-h3{
+h3, h4{
   background-color: black;
   font-size: 1.5em;
   padding: 10px 15px 5px;
@@ -291,7 +291,7 @@ section.info.team div.teamIMG p{
   padding: 0 15px 15px;
 }
 
-section p.spacer{
+section p.spacer, h4{
   margin-bottom: 10px;
 }
 
