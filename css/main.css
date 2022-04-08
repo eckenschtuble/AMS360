@@ -724,3 +724,20 @@ footer p{
     page-break-after: avoid;
   }
 }
+
+
+
+
+
+
+
+
+a.navbar-brand{
+  padding: 0;
+  margin: 80px 0;
+}
+
+.logo{
+  width: 600px;
+}
+
